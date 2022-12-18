@@ -78,7 +78,7 @@ public:
         delete el->next;
         el->next=tmp;
     }
-    void unique(){
+    void unique(){// задание: удалить из списка повторения элементов
         unordered_map<T,int>used;
         node* prev=nullptr;
         for(node* it=first;it;){
